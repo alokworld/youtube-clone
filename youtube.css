@@ -1,0 +1,281 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 0, 0);
+}
+img{
+    cursor: pointer;
+    width:30px;
+    height: 30px;
+}
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+nav{
+    padding:2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.222);
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top:0;
+    height: 45px;
+    z-index:1;
+}
+.nav-right img{
+    margin-right:25px ;
+}
+.nav-left img{
+    margin-left:10px;
+    margin-right: 20px;
+}
+.logo{
+    width:45px;
+    height: 30px;
+}
+.user{
+    border-radius: 50%;
+}
+
+    
+
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border:2px solid black;
+    border-radius: 20px;
+    width:300px;
+    padding: 2px;
+}
+.search-box input{
+    padding: 5px;
+    height: 25px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+.search-box img{
+    margin-right:15px;
+}
+
+/*------------sidebar--------------*/
+.sidebar{
+    border-right: 1px solid #ccc;
+    background: #ffff;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande';
+    font-weight: bold;
+    width:15%;
+    position: absolute;
+    top:0;
+    padding-left:2%;
+    padding-top:80px;
+}
+.shortcut-links a img{
+    width:30px;
+    margin-right:20px;
+}
+.shortcut-links a{
+    display:flex;
+    align-items:center;
+    margin-bottom: 20px;
+    width:fit-content;
+    flex-wrap:wrap;
+    color: blue;
+}
+.shortcut-links a:first-child{
+    color:rgb(255, 0, 0);
+}
+.sidebar hr{
+    border:0;
+    height:1px;
+    background: #ccc;
+    width: 85%;
+}
+.subscribed-list h3{
+    font-size:13px;
+    margin:20px 0;
+    color: rebeccapurple;
+}
+.subscribed-list a{
+    display:flex;
+    font-weight: bold;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    align-items:center;
+    margin-bottom:20px;
+    width:fit-content;
+    flex-wrap: wrap;
+
+}
+.subscribed-list a p{
+    margin-left: 20px;
+}
+.subscribed-list a img{
+    width:30px;
+    border-radius: 50%;
+}
+
+/*-------------js class--------------*/
+.small-sidebar{
+    width: 5%;
+}
+.small-sidebar a p{
+    display: none;
+}
+.small-sidebar h3{
+    display:none;
+}
+.small-sidebar hr{
+    width:50%;
+    margin-bottom:25px;
+}
+
+/*------------main--------------*/
+.container{
+    background: #f9f9f9;
+    width:100%;
+    padding-left:15%;
+    padding-right:2%;
+    padding-top:20px;
+    padding-bottom:20px;
+}
+.banner{
+    width: 100%;
+    position: relative;
+    height: 300px;
+    border:2px solid rgb(23, 19, 139);
+    margin-bottom: 10px;
+    margin-left:15px;
+    background:url("pexels-fauxels-3183150.jpg");
+    background-size:cover;
+    border-radius:8px;
+    margin-bottom:20px;
+}
+.banner h5{
+    position:absolute;
+    bottom:5px;
+    left:10px;
+    color:rgb(255, 255, 255);
+    font-size: large;
+    text-shadow: 0 0 10px black;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+}
+/*-----js class-----*/
+.contains{
+    padding-left:5%;
+}
+
+.list-container{
+
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    flex-wrap: wrap;
+}
+
+.vidlist{
+ margin-left: 15px;
+ width:353px;
+ height: fit-content;
+ display: grid;
+}
+.thumbnail{
+    border-radius: 10px;
+    border:1px solid black;
+    margin-bottom: 10px;
+    height:250px;
+    width:350px;
+}
+.title-channel{
+    display:flex;
+    padding:2px;
+    align-items: center;
+}
+.title-channel img{
+    border-radius:50%;
+}
+.title-channel h5{
+    margin-left:5px ;
+    font-size: large;
+    color: black;
+}
+.vidlist p{
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+    color:rgb(17, 13, 19);
+    margin-bottom:20px;
+}
+/*----------responsive-----------*/
+@media(max-width:900px){
+    nav{
+        display: flex;
+        justify-content:space-between;
+    }
+    .flex-div{
+        display: flex;
+        align-items:center;
+
+    }
+    .nav-left img{
+        margin-left:0px;
+        margin-right:0px;
+    }
+    .menu-icon{
+        display:none;
+    }
+    .sidebar{
+        display:none;
+    }
+    .nav-right
+    {
+        display:none;
+    }
+    .search-box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border:2px solid black;
+        border-radius: 20px;
+        width:100%;
+        padding: 2px;
+    }
+    .flex-div{
+        justify-content: space-around;
+    }
+    .container{
+        background: #f9f9f9;
+        width:100%;
+        padding:0;
+    }
+    .banner{
+        width: 100%;
+        height: 300px;
+        border:2px solid rgb(23, 19, 139);
+        margin-bottom: 10px;
+        margin-left:0px;
+        background:url("pexels-fauxels-3183150.jpg");
+        background-size:cover;
+        border-radius:0px;
+    }
+    .vidlist{
+        margin-left: 0px;
+        border-radius:0px;
+        margin-right: 0;
+        width:100%;
+    }
+    .thumbnail{
+        width:100%;
+        border-radius:0px;
+
+    }
+    .list-container{
+        display: grid;
+    }
+
+
+}
+

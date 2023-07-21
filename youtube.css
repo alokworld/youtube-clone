@@ -165,13 +165,23 @@ nav{
     text-shadow: 0 0 10px black;
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
 }
+h6{
+    width:100%;
+    height:60px;
+    font-size:40px;
+    font-weight:300;
+    border-radius:10px;
+    color:azure;
+    background-color: rgb(0, 6, 169);
+    margin-bottom:20px;
+    text-align: center;
+}
 /*-----js class-----*/
 .contains{
     padding-left:5%;
 }
 
 .list-container{
-
     display: flex;
     justify-content: space-between;
     width:100%;
@@ -275,7 +285,17 @@ nav{
     .list-container{
         display: grid;
     }
-
+    h6{
+        width:100%;
+        height:30px;
+        font-size:20px;
+        font-weight:300;
+        border-radius:10px;
+        color:azure;
+        background-color: rgb(0, 6, 169);
+        margin-bottom:30px;
+        text-align: center;
+    }
 
 }
 
